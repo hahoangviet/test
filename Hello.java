@@ -3,6 +3,6 @@ public class Hello {
         System.out.println(greeting() + ", " + name);
     }
     public static String greeting() {
-        return "Hello";
+        return "Ciao, ";
     }
 }
