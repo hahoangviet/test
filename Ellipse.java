@@ -74,21 +74,21 @@ public class Ellipse extends Shape {
        if(expr.contanins(" cy=")){
         final Double result = SVGParser.extractDouble(expr," cy=");
         if(result != null){
-            cx = result.doubleValue();
+            cy = result.doubleValue();
         }
     } 
 
     if(expr.contanins(" rx=")){
         final Double result = SVGParser.extractDouble(expr," rx=");
         if(result != null){
-            cx = result.doubleValue();
+            rx = result.doubleValue();
         }
     } 
 
     if(expr.contanins(" ry=")){
         final Double result = SVGParser.extractDouble(expr," ry=");
         if(result != null){
-            cx = result.doubleValue();
+            ry = result.doubleValue();
         }
     } 
     return (cx != null || cy != null || rx != null || ry != null);
